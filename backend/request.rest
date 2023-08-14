@@ -1,0 +1,58 @@
+POST http://localhost:3002/auth/user/signup 
+Content-Type: application/json
+
+{
+    "username":"test2",
+    "email":"guhan2@asd.com",
+    "password":"blah", 
+    "name":"test2", 
+    "address":"tes", 
+    "phone":"897", 
+    "age":"18"
+}
+
+###
+
+POST http://localhost:3002/auth/user/login
+Content-Type: application/json
+
+{
+    "email":"guhan2@asd.com",
+    "password":"blah"
+    
+}
+
+###
+GET http://localhost:3002/user/dashboard
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEyLCJpYXQiOjE2OTE5NDY2OTksImV4cCI6MTY5MTk0NzU5OX0.PZlIF6yolx6JuzMWS8wYUo7CBsfoL1V06z6fR2TZ96s
+
+###
+POST http://localhost:3001/auth/refreshToken
+
+###
+POST http://localhost:3002/auth/admin/register
+Content-Type: application/json
+
+{
+    "username":"guhan",
+    "email":"guhan@iqubekct.ac.in",
+    "password":"guhan123", 
+    "name":"Guhan", 
+    "address":"Coimbatore", 
+    "phone":"8072998695", 
+    "age":"21"
+}
+
+###
+POST http://localhost:3002/auth/admin/login
+Content-Type: application/json
+
+{
+    "email":"guhan@iqubekct.ac.in",
+    "password":"guhan123"
+    
+}
+
+###
+GET http://localhost:3002/admin/dashboard
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoxLCJpYXQiOjE2OTIwNDkzNzgsImV4cCI6MTY5MjA1MDI3OH0.LeTi361mwV9Pa0O7gDx19haAYDmWZuZudAcPz-CAArs
